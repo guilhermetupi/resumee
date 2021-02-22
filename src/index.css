@@ -1,12 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&family=Fjalla+One&display=swap');
 
-body {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none !important;
-  list-style: none !important;
   font-family: 'Fjalla One', sans-serif;
+  --primary-color: #1f2234;
+  --primary-dark-color: #212336;
+  --primary-light-color: #2b2d41;
+  --secundary-color: #da1042;
+  --secundary-opcityless-color: #da104283;
+}
+
+body {
+  background-color: var(--primary-color);
+  font-size: 10px;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+li {
+  list-style: none !important;
 }
 
 code {

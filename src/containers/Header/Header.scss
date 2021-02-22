@@ -1,0 +1,57 @@
+.header {
+  width: 100vw;
+  background-color: var(--primary-dark-color);
+
+  .header__container {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .header__logo {
+      color: white;
+      font-family: 'Dosis';
+      font-size: 1.5rem;
+
+      span {
+        font-family: inherit;
+        font-size: inherit;
+        color: var(--secundary-color);
+      }
+    }
+
+    .header__navigation {
+      height: 100%;
+      display: flex;
+      align-items: center;
+
+      .header__navigationItem {
+        margin: 0 20px;
+        text-transform: uppercase;
+
+        li:last-child {
+          margin-right: 0;
+        }
+
+        a {
+          margin-top: 3px;
+          padding-bottom: 10px;
+          font-size: 1.2rem;
+          color: #e7e7e7;
+          border-bottom: 3px solid var(--primary-dark-color);
+          transition: ease-in 0.3s;
+        }
+
+        a:hover {
+          color: var(--secundary-color);
+          opacity: 0.6;
+        }
+
+        a.active {
+          color: var(--secundary-color);
+          border-bottom: 3px solid var(--secundary-color);
+        }
+      }
+    }
+  }
+}
